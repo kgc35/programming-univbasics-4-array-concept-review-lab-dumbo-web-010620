@@ -4,10 +4,12 @@ def find_element_index(array, value_to_find)
 
   array_length.times do |index|
     if array[index] == value_to_find
-      answer = index;
+      return index
+    else 
+      return nil
     end
   end
-    answer
+
 end
 
 def find_max_value(array)
