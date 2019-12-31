@@ -21,6 +21,14 @@ def find_max_value(array)
   max_value
 end
 
-#def find_min_value(array)
-  # Add your solution here
-#end
+def find_min_value(array)
+  array_len = array.length;
+  min_value = array[0];
+
+  array_len.times do |index|
+    if array[index] < min_value
+      min_value = array[index];
+    end
+  end
+  min_value
+end
